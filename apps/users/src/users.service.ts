@@ -12,6 +12,7 @@ export class UsersService {
   getHello(): string {
     return 'Hello World from Users';
   }
+  
   constructor(private readonly usersRepository: UsersRepository) {}
 
   async getAllUsers(): Promise<User[]> {

@@ -1,0 +1,20 @@
+openapi: 3.0.0
+paths:
+  /:
+    get:
+      operationId: AppController_getHello
+      parameters: []
+      responses:
+        "200":
+          description: ""
+info:
+  title: Approval example
+  description: The Approval API description
+  version: "1.0"
+  contact: {}
+tags:
+  - name: approval
+    description: ""
+servers: []
+components:
+  schemas: {}
