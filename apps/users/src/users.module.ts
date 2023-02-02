@@ -11,11 +11,9 @@ import { UsersService } from './users.service';
   imports: [
     DatabaseModule,
     ConfigModule.forRoot({
-      envFilePath: './apps/users/.env'
+      envFilePath: './apps/users/.env',
     }),
-    MongooseModule.forFeature([
-      { name: User.name, schema: UserSchema}
-    ])
+    MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
   ],
   controllers: [UsersController],
   providers: [UsersService, UsersRepository],

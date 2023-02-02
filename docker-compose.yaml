@@ -1,20 +1,20 @@
 services:
-  users:
-    build:
-      context: .
-      dockerfile: ./apps/users/Dockerfile
-      target: development
-    command: npm run start:dev users
-    env_file:
-      - ./apps/users/.env
-    depends_on:
-      - mongo
-      - mongo-express      
-    volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
-    ports:
-      - '3001:3001'
+  # users:
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/users/Dockerfile
+  #     target: development
+  #   command: npm run start:dev users
+  #   env_file:
+  #     - ./apps/users/.env
+  #   depends_on:
+  #     - mongo
+  #     - mongo-express      
+  #   volumes:
+  #     - .:/usr/src/app
+  #     - /usr/src/app/node_modules
+  #   ports:
+  #     - '3001:3001'
   mongo:
     image: mongo
     restart: always

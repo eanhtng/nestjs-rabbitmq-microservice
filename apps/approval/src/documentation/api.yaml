@@ -7,6 +7,13 @@ paths:
       responses:
         "200":
           description: ""
+  /forms:
+    get:
+      operationId: FormsController_getAllForms
+      parameters: []
+      responses:
+        "200":
+          description: ""
 info:
   title: Approval example
   description: The Approval API description
